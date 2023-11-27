@@ -1,16 +1,16 @@
 /*
  * XAdES4j - A Java library for generation and verification of XAdES signatures.
  * Copyright (C) 2011 Luis Goncalves.
- * 
+ *
  * XAdES4j is free software; you can redistribute it and/or modify it under
  * the terms of the GNU Lesser General Public License as published by the Free
  * Software Foundation; either version 3 of the License, or any later version.
- * 
+ *
  * XAdES4j is distributed in the hope that it will be useful, but WITHOUT
  * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
  * FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for more
  * details.
- * 
+ *
  * You should have received a copy of the GNU Lesser General Public License along
  * with XAdES4j. If not, see <http://www.gnu.org/licenses/>.
  */
@@ -38,9 +38,9 @@ final class XPath2FilterTransformParamsMarshaller implements AlgorithmParameters
     {
         List<XPath2Filter> filters = alg.getFilters();
         List<Node> params = new ArrayList<>(filters.size());
-        
+
         Set<Map.Entry<String, String>> namespaces = alg.getNamespaces().entrySet();
-        
+
         for (XPath2Filter filter : filters)
         {
             XPath2FilterContainer c;
@@ -61,21 +61,21 @@ final class XPath2FilterTransformParamsMarshaller implements AlgorithmParameters
             {
                 throw new IllegalArgumentException(filterType);
             }
-            
+
             // For simplicity, add the namespace declarations to all the  XPath
             // elements. Also, it's likely that the same prefix is used on the
             // different filters.
             for(Map.Entry<String, String> ns : namespaces)
             {
-                try 
+                try
                 {
                     c.setXPathNamespaceContext(ns.getKey(), ns.getValue());
-                }catch (XMLSecurityException ex) 
+                }catch (XMLSecurityException ex)
                 {
                     throw new IllegalArgumentException("Invalid namespaces for XPath query", ex);
                 }
             }
-            
+
             params.add(c.getElement());
         }
         return params;

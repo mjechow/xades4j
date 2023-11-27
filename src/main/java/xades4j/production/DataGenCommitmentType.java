@@ -52,7 +52,7 @@ class DataGenCommitmentType implements PropertyDataObjectGenerator<CommitmentTyp
         }
 
         commTypeData.setQualifiers(prop.getQualifiers());
-        
+
         return commTypeData;
     }
 }

@@ -50,7 +50,7 @@ final class DefaultSignedPropertiesMarshaller
     DefaultSignedPropertiesMarshaller(AlgorithmsParametersMarshallingProvider algorithmsParametersMarshallingProvider)
     {
         super(9, QualifyingProperty.SIGNED_PROPS_TAG);
-        
+
         // Signed signature properties
         super.putConverter(
                 SigningCertificateData.class,
@@ -92,7 +92,7 @@ final class DefaultSignedPropertiesMarshaller
     }
 
     /* Methods from BaseJAXBMarshaller */
-    
+
     @Override
     protected void prepareSigProps(XmlSignedPropertiesType xmlProps)
     {

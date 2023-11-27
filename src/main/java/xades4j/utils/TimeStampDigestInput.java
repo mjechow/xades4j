@@ -52,5 +52,3 @@ public interface TimeStampDigestInput
      */
     byte[] getBytes();
 }
-
-

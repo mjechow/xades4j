@@ -23,7 +23,7 @@ import xades4j.properties.data.PropertyDataObject;
  * found for one of the property data objects.
  * @see QualifyingPropertyVerifier
  * @see XadesVerificationProfile#withQualifyingPropertyVerifier(java.lang.Class, xades4j.verification.QualifyingPropertyVerifier)
- * @see XadesVerificationProfile#withQualifyingPropertyVerifier(java.lang.Class, java.lang.Class) 
+ * @see XadesVerificationProfile#withQualifyingPropertyVerifier(java.lang.Class, java.lang.Class)
  * @author Luís
  */
 public class QualifyingPropertyVerifierNotAvailableException extends InvalidSignatureException

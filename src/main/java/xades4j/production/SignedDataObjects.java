@@ -192,7 +192,7 @@ public final class SignedDataObjects
      *
      * @param otherUnsignedDataObjProp the custom property
      * @return the current instance
-     * 
+     *
      * @throws NullPointerException if {@code otherUnsignedDataObjProp} is {@code null}
      * @throws PropertyTargetException if the property is already present
      * @throws IllegalArgumentException if the property if not properly annotated
@@ -297,7 +297,7 @@ public final class SignedDataObjects
         {
             throw new NullPointerException("Resolver cannot be null");
         }
-        
+
         this.resourceResolvers.add(resolver);
         return this;
     }

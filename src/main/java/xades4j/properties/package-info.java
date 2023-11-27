@@ -22,4 +22,3 @@
  * XAdES 1.4.1 but the library also supports adding new properties.
  */
 package xades4j.properties;
-

@@ -54,4 +54,3 @@ class X500NameStyleProviderTest
         assertEquals(name1, name3);
     }
 }
-

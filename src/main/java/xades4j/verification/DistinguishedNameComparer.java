@@ -31,7 +31,7 @@ class DistinguishedNameComparer
 {
     private final X500ExtensibleNameStyle x500NameStyle;
     private final X500NameStyleProvider x500NameStyleProvider;
-    
+
     @Inject
     DistinguishedNameComparer(X500ExtensibleNameStyle x500NameStyle, X500NameStyleProvider x500NameStyleProvider)
     {
@@ -40,7 +40,7 @@ class DistinguishedNameComparer
     }
 
     /**
-     * @exception IllegalArgumentException if the DN string is invalid 
+     * @exception IllegalArgumentException if the DN string is invalid
      */
     boolean areEqual(X500Principal parsedDn, String stringDn)
     {

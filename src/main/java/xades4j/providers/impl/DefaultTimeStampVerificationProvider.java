@@ -173,7 +173,7 @@ public class DefaultTimeStampVerificationProvider implements TimeStampVerificati
 
         return tsTokenInfo.getGenTime();
     }
-    
+
     /** Selector selecting all certificates. */
     private static class AllCertificatesSelector implements Selector<X509CertificateHolder> {
 

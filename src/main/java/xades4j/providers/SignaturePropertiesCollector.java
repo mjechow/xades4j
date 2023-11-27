@@ -73,7 +73,7 @@ public interface SignaturePropertiesCollector
      * <p>
      * Each custom property needs a corresponding {@link xades4j.production.PropertyDataObjectGenerator}
      * which can be supplied through {@link xades4j.production.XadesSigningProfile}.
-     * 
+     *
      * @param otherSignedProp the custom property
      *
      * @throws NullPointerException if {@code otherSignedProp} is {@code null}
@@ -89,9 +89,9 @@ public interface SignaturePropertiesCollector
      * <p>
      * Each custom property needs a corresponding {@link xades4j.production.PropertyDataObjectGenerator}
      * which can be supplied through {@link xades4j.production.XadesSigningProfile}.
-     * 
+     *
      * @param otherUnsignedProp the custom property
-     * 
+     *
      * @throws NullPointerException if {@code otherUnsignedProp} is {@code null}
      * @throws PropertyTargetException if the property (instance) is already present
      * @throws IllegalArgumentException if the property is not properly annotated

@@ -27,13 +27,13 @@ public class ObjectIdentifier
 {
     private final String identifier;
     private final IdentifierType identifierType;
-    private final String description;    
+    private final String description;
 
     public ObjectIdentifier(String identifier, IdentifierType identifierType, String description)
     {
         if(StringUtils.isNullOrEmptyString(identifier) || null == identifierType)
             throw new NullPointerException("Identifier and identifier type cannot be null");
-        
+
         this.identifier = identifier;
         this.identifierType = identifierType;
         this.description = description;
@@ -58,7 +58,7 @@ public class ObjectIdentifier
     {
         return identifierType;
     }
-    
+
     public String getDescription()
     {
         return description;

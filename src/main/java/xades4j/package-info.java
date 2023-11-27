@@ -23,4 +23,3 @@
  * For signature verification refer to {@code xades4j.verification.XadesVerificationProfile}.
  */
 package xades4j;
-

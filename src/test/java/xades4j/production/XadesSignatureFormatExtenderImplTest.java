@@ -44,20 +44,20 @@ class XadesSignatureFormatExtenderImplTest extends SignerTestBase
         NodeList signatures = doc.getElementsByTagNameNS(Constants.SignatureSpecNS, Constants._TAG_SIGNATURE);
         // Existing counter signature is the last
         Element signatureNode = (Element)signatures.item(signatures.getLength() - 1);
-                
+
         XadesSigner signer = new XadesBesSigningProfile(keyingProviderMy).newSigner();
-        
+
         XadesSignatureFormatExtender extender = new XadesFormatExtenderProfile().getFormatExtender();
 
         XMLSignature sig = new XMLSignature(signatureNode, signatureNode.getOwnerDocument().getBaseURI());
         Collection<UnsignedSignatureProperty> usp = new ArrayList<>(1);
         usp.add(new CounterSignatureProperty(signer));
-        
+
         extender.enrichSignature(sig, new UnsignedProperties(usp));
 
         outputDocument(doc, "document.signed.bes.cs.cs.xml");
     }
-    
+
     @Test
     void testEnrichSignatureWithT() throws Exception
     {

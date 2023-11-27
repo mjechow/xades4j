@@ -66,7 +66,7 @@ class DefaultVerificationBindingsModule extends AbstractModule
     {
         ParameterizedType pt = Types.newParameterizedType(QualifyingPropertyVerifier.class, dataObjectClass);
         TypeLiteral<QualifyingPropertyVerifier<TData>> tl = (TypeLiteral<QualifyingPropertyVerifier<TData>>)TypeLiteral.get(pt);
-        
+
         bind(tl).to(verifierClass);
         bind(tl).annotatedWith(BuiltIn.class).to(verifierClass);
     }
@@ -111,7 +111,7 @@ class DefaultVerificationBindingsModule extends AbstractModule
         bindBuiltInVerifier(SignatureTimeStampData.class, SignatureTimeStampVerifier.class);
         bindBuiltInVerifier(CompleteCertificateRefsData.class, CompleteCertRefsVerifier.class);
         bindBuiltInVerifier(CompleteRevocationRefsData.class, CompleteRevocRefsVerifier.class);
-        
+
         MapBinder<QName, QualifyingPropertyVerifier> unkownElemsBinder = MapBinder.newMapBinder(binder(), QName.class, QualifyingPropertyVerifier.class);
         unkownElemsBinder
                 .addBinding(new QName(QualifyingProperty.XADES_XMLNS, CounterSignatureProperty.PROP_NAME))

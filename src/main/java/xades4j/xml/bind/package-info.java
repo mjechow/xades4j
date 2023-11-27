@@ -19,4 +19,3 @@
  * Support for JAXB marshalling/unmarshalling, used by the default.
  */
 package xades4j.xml.bind;
-

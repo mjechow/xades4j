@@ -70,10 +70,10 @@ class ToXmlCommitmentTypeConverter implements SignedPropertyDataToXmlConverter
             {
                 XmlAnyType xmlQualifier = new XmlAnyType();
                 xmlQualifier.getContent().add(q);
-                
+
                 xmlQualifiers.getCommitmentTypeQualifier().add(xmlQualifier);
             }
-            
+
             xmlCommitmentTypeProp.setCommitmentTypeQualifiers(xmlQualifiers);
         }
     }

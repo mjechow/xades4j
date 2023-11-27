@@ -19,4 +19,3 @@
  * Utility classes used in the library, which may also be usefull outside.
  */
 package xades4j.utils;
-

@@ -138,7 +138,7 @@ public class PropertiesDataObjectsStructureVerifier
      * Gets a structure verifier for the given property data object. If no verifier
      * is found in the map, the property data object's type is check for the appropriate
      * annotation.
-     * 
+     *
      * The structure verifiers aren't configured through the profiles because a
      * structure verifier has a very tight relation with the corresponding data
      * object (when one is used, the other is necessarily used too). The property

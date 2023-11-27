@@ -37,7 +37,7 @@ class FromXmlSigningCertificateConverter
 
         SigningCertificateData signingCertData = new SigningCertificateData();
         FromXmlUtils.createAndCertificateRefs(xmlSigningCertificate, signingCertData);
-       
+
         propertyDataCollector.setSigningCertificate(signingCertData);
     }
 }

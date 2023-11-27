@@ -22,4 +22,3 @@
  * A default implementation using JAXB is provided for the unmarshaller.
  */
 package xades4j.xml.unmarshalling;
-

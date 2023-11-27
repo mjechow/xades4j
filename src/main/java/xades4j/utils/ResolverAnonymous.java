@@ -24,19 +24,19 @@ import org.apache.xml.security.utils.resolver.ResourceResolverSpi;
 
 /**
  * Resource resolver for References without a URI attribute.
- * 
+ *
  * @author luis
  */
 public final class ResolverAnonymous extends ResourceResolverSpi
 {
     private final InputStream data;
-    
-    
+
+
     public ResolverAnonymous(InputStream data)
     {
         this.data = data;
     }
-    
+
     @Override
     public XMLSignatureInput engineResolveURI(ResourceResolverContext context)
     {

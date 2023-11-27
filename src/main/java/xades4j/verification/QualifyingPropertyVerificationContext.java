@@ -75,7 +75,7 @@ public class QualifyingPropertyVerificationContext
     }
 
     /**
-     * 
+     *
      */
     public static class CertificationChainData
     {

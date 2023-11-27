@@ -23,4 +23,3 @@
  * The library supports producing XAdES-BES, XAdES-EPES, XAdES-T and XAdES-C.
  */
 package xades4j.production;
-

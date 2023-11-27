@@ -79,7 +79,7 @@ class XadesSignatureFormatExtenderImpl implements XadesSignatureFormatExtender
         SigAndDataObjsPropertiesData propsData = propsDataObjectsGenerator.generateUnsignedPropertiesData(
                 props,
                 new PropertiesDataGenerationContext(sig));
-        
+
         // A little style trick to have nice prefixes.
         if(null == sig.getDocument().lookupPrefix(QualifyingProperty.XADESV141_XMLNS))
             qualifProps.setAttributeNS(Constants.NamespaceSpecNS, "xmlns:xades141", QualifyingProperty.XADESV141_XMLNS);

@@ -71,7 +71,7 @@ class KeyInfoProcessor
         {
             return tryUseSigningCertificateReference(signingCertRef, x500NameStyleProvider);
         }
-        
+
         List<X509Certificate> keyInfoCerts = new ArrayList<>(1);
         XMLX509IssuerSerial issuerSerial = null;
         X509CertSelector certSelector = new X509CertSelector();
@@ -149,7 +149,7 @@ class KeyInfoProcessor
         X509CertSelector certSelector = new X509CertSelector();
         certSelector.setIssuer(x500NameStyleProvider.fromString(signingCertRef.getIssuerDN()));
         certSelector.setSerialNumber(signingCertRef.getSerialNumber());
-        
-        return new KeyInfoRes(certSelector);     
+
+        return new KeyInfoRes(certSelector);
     }
 }

@@ -13,7 +13,7 @@ import java.util.Set;
 
 /**
  * <b>Experimental API</b>. It may be changed or removed in future releases.
- * 
+ *
  * @author Artem R. Romanenko
  * @version 30.07.18
  */

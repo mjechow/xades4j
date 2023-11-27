@@ -34,9 +34,9 @@ class DataGenCommitmentTypeAllDataObjs implements PropertyDataObjectGenerator<Al
         CommitmentTypeData commTypeData = new CommitmentTypeData(
                 prop.getUri(),
                 prop.getDescription());
-        
+
         commTypeData.setQualifiers(prop.getQualifiers());
-        
+
         return commTypeData;
     }
 }

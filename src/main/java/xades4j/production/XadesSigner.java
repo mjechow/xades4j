@@ -27,7 +27,7 @@ import xades4j.XAdES4jException;
  * All the exceptions defined in the current package may be thrown during production.
  * They are organized as a tree which means that one can go from rough to fine-grained
  * handling by catching exceptions in the different branches/depths of the tree.
- * 
+ *
  * @see XadesSigningProfile
  * @author Luís
  */

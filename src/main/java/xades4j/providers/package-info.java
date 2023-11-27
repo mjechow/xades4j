@@ -19,4 +19,3 @@
  * Interfaces for the different components in signature production and verification.
  */
 package xades4j.providers;
-

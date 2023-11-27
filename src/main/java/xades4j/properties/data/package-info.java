@@ -50,4 +50,3 @@
  * data object</b>.
  */
 package xades4j.properties.data;
-

@@ -21,7 +21,7 @@ import xades4j.properties.SignaturePolicyBase;
 /**
  * Provides the signature policy to be used in a XAdES-EPES.
  * @see xades4j.production.XadesEpesSigningProfile
- * @see xades4j.production.XadesTSigningProfile#withPolicyProvider(java.lang.Class) 
+ * @see xades4j.production.XadesTSigningProfile#withPolicyProvider(java.lang.Class)
  * @author Luís
  */
 public interface SignaturePolicyInfoProvider

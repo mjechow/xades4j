@@ -161,7 +161,7 @@ public class DOMHelper
      * @param e the element
      * @param namespaceURI namespace
      * @param localName element name
-     * @return 
+     * @return
      */
     public static Collection<Element> getChildElementsByTagNameNS(Element e, String namespaceURI, String localName)
     {
@@ -180,7 +180,7 @@ public class DOMHelper
 
         return elements;
     }
-    
+
     public static NodeList nodeList(Iterable<Node> nodes)
     {
         HelperNodeList nl = new HelperNodeList();

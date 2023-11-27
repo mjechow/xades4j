@@ -71,11 +71,11 @@ public final class CommitmentTypeData implements PropertyDataObject
     {
         return uri;
     }
-    
+
     public void setQualifiers(Collection<Object> qualifiers){
         this.qualifiers = qualifiers;
     }
-    
+
     public Collection<Object> getQualifiers(){
         return this.qualifiers;
     }

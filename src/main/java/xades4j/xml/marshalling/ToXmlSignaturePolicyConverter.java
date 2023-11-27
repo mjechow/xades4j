@@ -60,10 +60,10 @@ class ToXmlSignaturePolicyConverter implements SignedPropertyDataToXmlConverter
     private XmlSignaturePolicyIdType getSignaturePolicy(SignaturePolicyData sigPolicyData)
     {
         XmlSignaturePolicyIdType xmlSigPolicyId = new XmlSignaturePolicyIdType();
-        
+
         // Identifier
         xmlSigPolicyId.setSigPolicyId(ToXmlUtils.getXmlObjectId(sigPolicyData.getIdentifier()));
-        
+
         // Hash
         XmlDigestMethodType xmlDigestMethod = new XmlDigestMethodType();
         xmlDigestMethod.setAlgorithm(sigPolicyData.getDigestAlgorithm());
@@ -71,7 +71,7 @@ class ToXmlSignaturePolicyConverter implements SignedPropertyDataToXmlConverter
         xmlDigest.setDigestMethod(xmlDigestMethod);
         xmlDigest.setDigestValue(sigPolicyData.getDigestValue());
         xmlSigPolicyId.setSigPolicyHash(xmlDigest);
-        
+
         // Qualifiers
         String url = sigPolicyData.getLocationUrl();
         if (url != null)
@@ -79,12 +79,12 @@ class ToXmlSignaturePolicyConverter implements SignedPropertyDataToXmlConverter
             JAXBElement<String> xmlSPURI = new JAXBElement<>(new QName(QualifyingProperty.XADES_XMLNS, "SPURI"), String.class, url);
             XmlAnyType xmlQualifier = new XmlAnyType();
             xmlQualifier.getContent().add(xmlSPURI);
-            
+
             XmlSigPolicyQualifiersListType xmlQualifiers = new XmlSigPolicyQualifiersListType();
             xmlQualifiers.getSigPolicyQualifier().add(xmlQualifier);
             xmlSigPolicyId.setSigPolicyQualifiers(xmlQualifiers);
         }
-        
+
         return xmlSigPolicyId;
     }
 }

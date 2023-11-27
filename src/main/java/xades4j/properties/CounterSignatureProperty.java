@@ -61,7 +61,7 @@ public final class CounterSignatureProperty extends UnsignedSignatureProperty
     }
 
     /**
-     * 
+     *
      * @param verificationResult the result of counter signature verification
      */
     public CounterSignatureProperty(XAdESVerificationResult verificationResult)

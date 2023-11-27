@@ -31,7 +31,7 @@ class ToXmlSignatureTimeStampConverter extends ToXmlUnsignedTimeStampDataConvert
     {
         super(algorithmsParametersMarshallingProvider);
     }
-    
+
 
     @Override
     protected void insertIntoObjectTree(

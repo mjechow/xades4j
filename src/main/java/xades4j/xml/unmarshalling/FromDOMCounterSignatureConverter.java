@@ -37,7 +37,7 @@ class FromDOMCounterSignatureConverter implements QualifyingPropertyFromDOMConve
             props,
             QualifyingProperty.XADES_XMLNS,
             CounterSignatureProperty.PROP_NAME);
-        
+
         for (Element counterSig : counterSigs)
         {
             propertyDataCollector.addGenericDOMData(new GenericDOMData(counterSig));

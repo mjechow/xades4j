@@ -61,7 +61,7 @@ import xades4j.xml.marshalling.algorithms.AlgorithmParametersBindingsModule;
  * <p>
  * Repeated dependency bindings will not cause an immediate error. An exception
  * will be thrown when an instance of {@code XadesSigner} is requested.
- * 
+ *
  * @see XadesBesSigningProfile
  * @see XadesEpesSigningProfile
  * @see XadesTSigningProfile
@@ -203,7 +203,7 @@ public abstract class XadesSigningProfile
     {
         return withBinding(X500NameStyleProvider.class, x500NameStyleProviderClass);
     }
-    
+
     public XadesSigningProfile withBasicSignatureOptions(
             BasicSignatureOptions options)
     {

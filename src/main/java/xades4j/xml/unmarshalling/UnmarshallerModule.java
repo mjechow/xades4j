@@ -27,7 +27,7 @@ import java.util.Collection;
  * Helper class that convertes proeprties of a given type. The converters are
  * invoked only if the corresponding JAXB parent is present. This way the converters
  * don't need to be always checking that.
- * 
+ *
  * @author Luís
  */
 abstract class UnmarshallerModule<TXml>

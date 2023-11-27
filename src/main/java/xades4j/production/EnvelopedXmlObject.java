@@ -25,7 +25,7 @@ import xades4j.properties.DataObjectDesc;
  * XAdES signature, which will contain the data. Also, this {@code Object} will
  * be covered by a {@code ds:Reference} so that it is actually included in the
  * signature.
- * 
+ *
  * <p>If one wants to add content other than XML, a text node can be used.
  *
  * @see DataObjectDesc

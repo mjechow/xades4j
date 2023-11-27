@@ -46,7 +46,7 @@ class Issue166Test extends SignatureServicesTestBase
       assertNotEquals(principal1, principal2);
       assertNotEquals(principal1, principal3);
     }
-    
+
     @Test
     void javaCanComparePrintableAndPlainStrings() throws Exception
     {
@@ -64,7 +64,7 @@ class Issue166Test extends SignatureServicesTestBase
 
       assertNotEquals(principal1, principal2);
     }
-    
+
     @Test
     void javaCanCompareCertAndUtf8String() throws Exception
     {
@@ -73,7 +73,7 @@ class Issue166Test extends SignatureServicesTestBase
 
       assertEquals(principal1, principal2);
     }
-    
+
     @Test
     void javaCannotCompareCertAndPlainString() throws Exception
     {
@@ -103,7 +103,7 @@ class Issue166Test extends SignatureServicesTestBase
 
       assertEquals(principal1, principal2);
     }
-    
+
     @Test
     void bcCanCompareCertAndUtf8String() throws Exception
     {
@@ -112,7 +112,7 @@ class Issue166Test extends SignatureServicesTestBase
 
       assertEquals(principal1, principal2);
     }
-    
+
     @Test
     void bcCanCompareCertAndPlainString() throws Exception
     {

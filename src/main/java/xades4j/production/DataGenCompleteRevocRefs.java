@@ -73,7 +73,7 @@ class DataGenCompleteRevocRefs implements PropertyDataObjectGenerator<CompleteRe
                 crlTime.setTime(crl.getThisUpdate());
                 byte[] digest = messageDigest.digest(crl.getEncoded());
                 BigInteger crlNum = CrlExtensionsUtils.getCrlNumber(crl);
-               
+
                 crlRefs.add(new CRLRef(
                         this.x500NameStyleProvider.toString(crl.getIssuerX500Principal()),
                         crlNum,

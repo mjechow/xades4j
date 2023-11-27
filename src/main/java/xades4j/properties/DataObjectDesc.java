@@ -168,7 +168,7 @@ public abstract class DataObjectDesc
      * <p>
      * Each custom property needs a corresponding {@link xades4j.production.PropertyDataObjectGenerator}
      * which can be supplied through {@link xades4j.production.XadesSigningProfile}.
-     * 
+     *
      * @param otherSignedDataObjProp the custom property
      * @return the current instance
      * @throws NullPointerException if {@code otherSignedDataObjProp} is {@code null}
@@ -221,7 +221,7 @@ public abstract class DataObjectDesc
 
     /**
      * Use ONLY with properties that can be applied to multiple data objects.
-     * 
+     *
      * @throws NullPointerException if the property is {@code null}
      * @throws PropertyTargetException if the given property (instance)
      *                                  is already present

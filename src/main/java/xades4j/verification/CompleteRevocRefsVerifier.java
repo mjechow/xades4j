@@ -76,7 +76,7 @@ class CompleteRevocRefsVerifier implements QualifyingPropertyVerifier<CompleteRe
                 if (!this.dnComparer.areEqual(crl.getIssuerX500Principal(), crlRef.getIssuerDN()) ||
                         !crl.getThisUpdate().equals(crlRef.getIssueTime().getTime()))
                     continue;
-                
+
                 try
                 {
                     // Check CRL number, if present.
@@ -94,7 +94,7 @@ class CompleteRevocRefsVerifier implements QualifyingPropertyVerifier<CompleteRe
                         match = crlRef;
                         break;
                     }
-                } 
+                }
                 catch(IOException | CRLException | UnsupportedAlgorithmException ex)
                 {
                     throw new CompleteRevocRefsReferenceException(crl, ex.getMessage());

@@ -68,7 +68,7 @@ class FromXmlCommitmentTypeConverter implements SignedDataObjPropFromXmlConv
                         qualifiers.add(xmlQualifier.getContent().get(0));
                     }
                 }
-                
+
                 commTypeData.setQualifiers(qualifiers);
             }
 

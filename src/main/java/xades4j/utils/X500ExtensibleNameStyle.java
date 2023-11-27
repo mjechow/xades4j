@@ -6,7 +6,7 @@ import java.util.Map;
 
 /**
  * <b>Experimental API</b>. It may be changed or removed in future releases.
- * 
+ *
  * @author Artem R. Romanenko
  * @version 06.08.18
  */

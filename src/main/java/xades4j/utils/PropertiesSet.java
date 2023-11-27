@@ -29,7 +29,7 @@ import xades4j.properties.PropertyTargetException;
  * A generic bag of properties used to store properties that apply to a specific
  * target (data object descriptions, signature properties collector, signed data
  * objects). The properties are organized by type (class).
- * 
+ *
  * @author Luís
  */
 public class PropertiesSet<T>

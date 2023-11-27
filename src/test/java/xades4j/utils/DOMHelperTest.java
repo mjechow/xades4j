@@ -39,14 +39,14 @@ class DOMHelperTest
     void testGetChildElementsByTagNameNS() throws Exception
     {
         String xml = "<root><a xmlns='urn:test'/><b/><n:a xmlns:n='urn:test'/><c/></root>";
-        
+
         DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
         dbf.setNamespaceAware(true);
         DocumentBuilder db = dbf.newDocumentBuilder();
         Document doc = db.parse(new InputSource(new StringReader(xml)));
-        
+
         Collection<Element> elements = DOMHelper.getChildElementsByTagNameNS(doc.getDocumentElement(), "urn:test", "a");
-        
+
         assertNotNull(elements);
         assertEquals(2, elements.size());
         for (Element element : elements)

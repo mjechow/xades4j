@@ -42,12 +42,12 @@ class CommitmentTypeVerifier implements QualifyingPropertyVerifier<CommitmentTyp
         Collection<String> objsReferences = propData.getObjReferences();
 
         CommitmentTypePropertyBase property;
-        
+
         if (objsReferences != null)
         {
             // "Check that all the ObjectReference elements actually reference
             // ds:Reference elements from the signature."
-            
+
             SignedObjectsData signedObjsData = ctx.getSignedObjectsData();
             CommitmentTypeProperty commitmentTypeProperty = new CommitmentTypeProperty(uri, desc);
 
@@ -66,7 +66,7 @@ class CommitmentTypeVerifier implements QualifyingPropertyVerifier<CommitmentTyp
         {
             property = new AllDataObjsCommitmentTypeProperty(uri, desc);
         }
-        
+
         if (propData.getQualifiers() != null)
         {
             for (Object q : propData.getQualifiers())
@@ -81,7 +81,7 @@ class CommitmentTypeVerifier implements QualifyingPropertyVerifier<CommitmentTyp
                 }
             }
         }
-        
+
         return property;
     }
 }

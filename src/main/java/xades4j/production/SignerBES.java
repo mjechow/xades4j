@@ -174,7 +174,7 @@ class SignerBES implements XadesSigner
         SignedDataObjectsProcessor.Result signedDataObjectsResult = this.dataObjectDescsProcessor.process(
                 signedDataObjects,
                 signature);
-        
+
         /* ds:KeyInfo */
         this.keyInfoBuilder.buildKeyInfo(signingCertificateChain, signature);
 

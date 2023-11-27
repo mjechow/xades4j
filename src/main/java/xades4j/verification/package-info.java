@@ -25,4 +25,3 @@
  * A signature being verified can also be augmented to XAdES-T, XAdES-C, XAdES-X and XAdES-X-L.
  */
 package xades4j.verification;
-

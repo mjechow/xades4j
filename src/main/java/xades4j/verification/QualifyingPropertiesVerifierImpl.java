@@ -51,7 +51,7 @@ class QualifyingPropertiesVerifierImpl implements QualifyingPropertiesVerifier
         dataObjectsStructureVerifier.verifiyPropertiesDataStructure(unmarshalledProperties);
 
         Collection<PropertyInfo> props = new ArrayList<>(unmarshalledProperties.size());
-        
+
         for (PropertyDataObject propData : unmarshalledProperties)
         {
             QualifyingPropertyVerifier<PropertyDataObject> propVerifier = this.propertyVerifiersMapper.getVerifier(propData);

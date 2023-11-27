@@ -50,7 +50,7 @@ import xades4j.xml.unmarshalling.UnmarshallingBindingsModule;
  * setters should use the {@code Inject} annotation from Guice.
  * <p>
  * Custom {@link QualifyingPropertyVerifier}s can also be configured. The principles
- * on their dependencies are the same. In addition, custom verifiers that apply 
+ * on their dependencies are the same. In addition, custom verifiers that apply
  * over the whole on different stages of validation can be configured. Finally,
  * verifiers for specific XML elements may be added. This can be useful if one
  * wants to handle an unsigned property that is not known by the library, as the

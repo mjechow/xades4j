@@ -34,7 +34,7 @@ public interface QualifyingPropertyVerifier<TData extends PropertyDataObject>
      * is done in order to prevent a failure to be undetected by erroneous code.
      * Furthermore, the data structures resulting for the verification process
      * become simpler.
-     * 
+     *
      * @param propData the property data
      * @param ctx the context with data for validation
      * @return the verified QualifyingProperty (never {@code null})

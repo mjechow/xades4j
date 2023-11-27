@@ -85,21 +85,21 @@ public class VerifierTestBase extends SignatureServicesTestBase
     {
         return verifySignature(sigFileName, new XadesVerificationProfile(VerifierTestBase.validationProviderMySigs), null);
     }
-    
+
     protected static XAdESVerificationResult verifySignature(
             String sigFileName,
             XadesVerificationProfile p) throws Exception
     {
         return verifySignature(sigFileName, p, null);
     }
-    
+
     protected static XAdESVerificationResult verifySignature(
             String sigFileName,
             SignatureSpecificVerificationOptions options) throws Exception
     {
         return verifySignature(sigFileName, new XadesVerificationProfile(VerifierTestBase.validationProviderMySigs), options);
     }
-    
+
     protected static XAdESVerificationResult verifySignature(
             String sigFileName,
             XadesVerificationProfile p,

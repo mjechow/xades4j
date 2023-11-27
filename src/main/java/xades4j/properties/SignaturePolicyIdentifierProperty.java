@@ -88,7 +88,7 @@ public final class SignaturePolicyIdentifierProperty extends SignaturePolicyBase
     {
         return identifier;
     }
-    
+
     /**
      * Adds a URL where a copy of the signature policy may be obtained. This will
      * be added as a qualifier.
@@ -100,7 +100,7 @@ public final class SignaturePolicyIdentifierProperty extends SignaturePolicyBase
         locationUrl = url;
         return this;
     }
-    
+
     public String getLocationUrl()
     {
         return locationUrl;

@@ -1,16 +1,16 @@
 /*
  * XAdES4j - A Java library for generation and verification of XAdES signatures.
  * Copyright (C) 2011 Luis Goncalves.
- * 
+ *
  * XAdES4j is free software; you can redistribute it and/or modify it under
  * the terms of the GNU Lesser General Public License as published by the Free
  * Software Foundation; either version 3 of the License, or any later version.
- * 
+ *
  * XAdES4j is distributed in the hope that it will be useful, but WITHOUT
  * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
  * FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for more
  * details.
- * 
+ *
  * You should have received a copy of the GNU Lesser General Public License along
  * with XAdES4j. If not, see <http://www.gnu.org/licenses/>.
  */
@@ -44,15 +44,15 @@ public final class XPathTransform extends XPathTransformBase
     {
         return xpath;
     }
-    
+
     /**
      * Registers a namespace and the corresponding prefix to be used when resolving
      * the XPath expression. In the signature, the namespace declaration will be
      * added to the {@code XPath} parameter element of the current transform.
-     * 
+     *
      * @param prefix the namespace prefix
      * @param namespace the namespace URI
-     * 
+     *
      * @return the current instance
      */
     public XPathTransform withNamespace(String prefix, String namespace)

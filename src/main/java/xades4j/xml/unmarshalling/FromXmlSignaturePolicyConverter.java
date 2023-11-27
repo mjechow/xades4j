@@ -67,7 +67,7 @@ class FromXmlSignaturePolicyConverter implements SignedSigPropFromXmlConv
         {
             return null;
         }
-        
+
         List<XmlAnyType> xmlQualifiers = sigPolicyQualifiers.getSigPolicyQualifier();
         for (XmlAnyType xmlQualifier : xmlQualifiers)
         {
@@ -81,7 +81,7 @@ class FromXmlSignaturePolicyConverter implements SignedSigPropFromXmlConv
                 }
             }
         }
-        
+
         return null;
     }
 }

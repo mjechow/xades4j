@@ -25,7 +25,7 @@ import java.util.Set;
  * Base class for all the data object properties. This class checks target multiplicity.
  * For instance, if a property can only be applied to one data object and and attempt
  * is made to apply it to another, an exception is thrown.
- * 
+ *
  * @author Luís
  */
 public abstract class DataObjectProperty implements QualifyingProperty

@@ -21,7 +21,7 @@ package xades4j.providers;
  * generation to collect the optional signature properties that should be added
  * to the final XAdES signature. Note that the mandatory properties in each format
  * are enforced during signature production.
- * 
+ *
  * @author Luís
  */
 public interface SignaturePropertiesProvider

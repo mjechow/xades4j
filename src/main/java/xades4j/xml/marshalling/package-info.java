@@ -24,4 +24,3 @@
  * Default implementations using JAXB are provided for each marshaller.
  */
 package xades4j.xml.marshalling;
-

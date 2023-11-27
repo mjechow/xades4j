@@ -46,9 +46,9 @@ class XPath2FilterTransformParamsMarshallerTest {
 
         Set<Map.Entry<String, String>> namespaces = xpath.getNamespaces().entrySet();
 
-        for (Node paramNode : params) 
+        for (Node paramNode : params)
         {
-            for (Map.Entry<String, String> entry : namespaces) 
+            for (Map.Entry<String, String> entry : namespaces)
             {
                 String ns = ((Element)paramNode).getAttributeNS(Constants.NamespaceSpecNS, entry.getKey());
                 assertNotNull(ns);

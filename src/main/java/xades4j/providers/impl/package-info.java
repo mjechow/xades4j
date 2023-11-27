@@ -19,4 +19,3 @@
  * Implementations (default and other) of the different providers.
  */
 package xades4j.providers.impl;
-

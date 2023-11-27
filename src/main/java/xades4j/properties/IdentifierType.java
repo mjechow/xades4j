@@ -18,7 +18,7 @@ package xades4j.properties;
 
 /**
  * The object {@code IdentifierType} as defined in XAdES.
- * 
+ *
  * &lt;xsd:complexType name=&quot;IdentifierType&quot;&gt;
  * 	&lt;xsd:simpleContent&gt;
  *		&lt;xsd:extension base=&quot;xsd:anyURI&quot;&gt;
@@ -32,7 +32,7 @@ package xades4j.properties;
  *		&lt;xsd:enumeration value=&quot;OIDAsURN&quot;/&gt;
  *	&lt;/xsd:restriction&gt;
  * &lt;/xsd:simpleType&gt;
- * 
+ *
  * @author Luís
  */
 public enum IdentifierType

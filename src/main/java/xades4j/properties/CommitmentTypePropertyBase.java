@@ -82,21 +82,21 @@ public abstract class CommitmentTypePropertyBase extends SignedDataObjectPropert
     {
         return PROP_NAME;
     }
-    
+
     public CommitmentTypePropertyBase withQualifier(String qualifier){
         return this.addQualifier(qualifier);
     }
-    
+
     public CommitmentTypePropertyBase withQualifier(Element qualifier){
         return this.addQualifier(qualifier);
     }
-    
+
     private CommitmentTypePropertyBase addQualifier(Object qualifier){
         this.qualifiers = CollectionUtils.newIfNull(this.qualifiers, 2);
         this.qualifiers.add(qualifier);
         return this;
     }
-    
+
     public Collection<Object> getQualifiers(){
         return CollectionUtils.emptyIfNull(this.qualifiers);
     }
